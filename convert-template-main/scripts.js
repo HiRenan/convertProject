@@ -46,6 +46,8 @@ function convertCurrency(amount, price, symbol) {
 
     total = formatCurrencyBRL(total).replace("R$", "");
 
+    result.textContent = `${total} Reais`;
+
     footer.classList.add("show-result");
   } catch (error) {
     footer.classList.remove("show-result");
